@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Ideal City</title>
+
+  <!-- Reveal js CSS -->
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.css"> -->
+  <link rel="stylesheet" href="reveal.css">
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/theme/black.css"> -->
+  <link rel="stylesheet" href="black.css">
+
+
+  <style>
+    .quote {
+      font-size: 1.2em;
+      font-style: italic;
+      line-height: 1.5;
+    }
+    .reveal {
+      font-family: Georgia, "Times New Roman", serif;
+      color: #fff;
+    }
+    .reveal h1,
+    .reveal h2,
+    .reveal h3,
+    .reveal h4,
+    .reveal h5,
+    .reveal h6 {
+      font-family: Georgia, "Times New Roman", serif;
+      /* color: #fff; */
+      text-transform: none;
+    }
+
+    .reveal h1 {
+      font-size: 1.5em;
+      text-transform: none;
+    }
+    .reveal h2 {
+      font-size: 1.4em;
+      text-transform: none;
+    }
+    .reveal h3 {
+      font-size: 1.3em;
+      text-transform: none;
+    }
+    .reveal h4 {
+      font-size: 1.2em;
+      text-transform: none;
+    }
+    .reveal h5 {
+      font-size: 1em;
+      text-transform: none;
+    }
+    .reveal p {
+      font-size: 0.6em;
+      text-transform: none;
+    }
+    /* custom css for collage items */
+    .photo-collage img {
+      max-width: none !important;
+      max-height: none !important;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      margin: 0 !important;
+      border: none !important;
+      box-shadow: none !important;
+      transition: transform 0.2s ease;
+    }
+    .photo-collage {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-auto-rows: 140px;
+      gap: 12px;
+      width: 90%;
+      max-width: 1000px;
+      margin: 20px auto 0 auto;
+    }
+    .collage-item {
+      position: relative;
+      overflow: hidden;
+      border-radius: 5px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    }
+
+    .collage-item:hover img {
+      transform: scale(1.2);
+    }
+
+    /* Grid Span Utilities */
+    .col-span-2 { grid-column: span 2; }
+    .row-span-2 { grid-row: span 2; }
+
+    /* Floating caption overlay */
+    .collage-item .caption {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 6px 10px;
+      background: linear-gradient(transparent, rgba(0, 0, 0, 0.75));
+      color: #fff;
+      font-size: 0.45em;
+      font-family: sans-serif;
+      text-align: left;
+      pointer-events: none;
+    }
+
+    ul.clean-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul.clean-list li {
+      margin-bottom: 0.5em;
+    }
+    .grow-after-all {
+      transition: transform 1s ease;
+    }
+
+    .grow-after-all.grow-now {
+      transform: scale(1.3);
+      font-weight: bold;
+    }
+    .shrink-after-all {
+      transition: transform 1s ease;
+    }
+
+    .shrink-after-all.shrink-now {
+      transform: scale(0.8);
+    }
+    .highlight{
+      display:inline-block;                 /* shrink‑wrap to the text */
+      padding:0.1em 0.1em;                  /* space around the words */
+      /* color:#000000;                           white text */
+      background:rgba(90, 90, 89, 0.75);          /* semi‑transparent dark highlight */
+      /* text-shadow:0 0 3px rgba(0,0,0,0.7);   optional soft glow */
+      border-radius:0.3em;                  /* rounded corners (optional) */
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="reveal">
+    <div class="slides">
+
+      <!--Introduction -->
+      <section>
+        <div class="overlay">
+          <h2>Reflections of an ideal city?</h2>
+          <p class="quote fragment">If cities were a person, they would be really overworked person</p>
+          <!-- <p class="fragment">No city can maximize all of them simuletaneously</p> -->
+        </div>
+      </section>
+
+      <!--The Demands of the City -->
+      <section data-background-image="your-image.jpg" data-background-size="cover">
+        <h2>My <b>demands</b> of the city...</h2>
+        <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; font-size: 0.7em; gap: 10px 120px; padding: 5px; max-width: 100%; width:100%; margin: 0 auto">
+          <span class="fragment grow-after-all" data-fragment-index="1">≥ Net Zero</span>
+          <span class="fragment" data-fragment-index="3">Climate Resilience 🌍</span>
+          <span class="fragment shrink-after-all" data-fragment-index="6">Participatory, democratic</span>
+          <span class="fragment grow-after-all" data-fragment-index="2">Green spaces & wildlife🌱</span>
+          <span class="fragment" data-fragment-index="5">Strong social institutions</span>
+          <span class="fragment" data-fragment-index="4">Affordable housing 🏠</span>
+          <span class="fragment grow-after-all" data-fragment-index="7">Low unemployment 💼</span>
+          <span class="fragment shrink-after-all" data-fragment-index="8">Feel safe</span>
+          <span class="fragment" data-fragment-index="11">Accessible public transport 🚍</span>
+          <span class="fragment" data-fragment-index="11">Multicultural 🫱🏻‍🫲🏾</span>
+          <span class="fragment shrink-after-all" data-fragment-index="11">Meaningful employment</span>
+          <span class="fragment grow-after-all" data-fragment-index="9">Egalitarian</span>
+          <span class="fragment" data-fragment-index="11">Education for all</span>
+          <span class="fragment grow-after-all" data-fragment-index="10">Walkable</span>
+          <span class="fragment shrink-after-all" data-fragment-index="11">Community "3rd space"</span>
+          <span class="fragment shrink-after-all" data-fragment-index="11">Universal Health Coverage 🩺</span>
+          <span class="fragment" data-fragment-index="11">Active Ageing 👴🏻</span>
+          <span class="fragment shrink-after-all" data-fragment-index="11">Diversity</span>
+          <span class="fragment shrink-after-all" data-fragment-index="11">Friendly neighbours</span>
+          <span class="fragment shrink-after-all" data-fragment-index="11">Clean water 🚰</span>
+          <span class="fragment shrink-after-all" data-fragment-index="11">no power outages ⚡</span>
+          <span class="fragment shrink-after-all" data-fragment-index="11">fast internet 🛜</span>
+
+
+          <span class="fragment trigger-grow" data-fragment-index="12" style="display:none;"></span>
+        </div>
+      </section>
+
+      <!-- <Your demands of the city> -->
+    
+      <section data-background-image="media/simcity.jpg" data-background-size="cover">
+        <div>
+          <h5 class="fragment highlight">It is impossible to satisfy myself, let alone everyone...</h5>
+          <h5 class="fragment highlight">just like in simscity</h5>
+                </div>
+      </section>
+
+      <section data-background-image="media/wall_e.jpg" data-background-size="cover">
+        <audio data-autoplay src="media/ethereal_music.mp3" preload="auto"></audio>
+        <div>
+          <h5 class="fragment highlight">the ideal city might just live in our heads</h5>
+          <p class="fragment highlight">in pure virtual reality...</p>
+                </div>
+      </section>
+
+      <section>
+        <audio data-autoplay src="media/construction_noise.mp3" preload="auto"></audio>
+        <img src="media/construction_sg.jpg" style="width:70%; height:auto;" alt="SimCity background">
+        <p>But in reality, the cities that I know are a WIP: eternally under-construction</p>
+        <p class="fragment">Perhaps, we should just accept that demolishing and construction are inherent to every vibrant city</p>
+      </section>
+
+      <!-- Eco-Villages -->
+      <section data-transition="zoom">
+        <div class="overlay">
+          <h3>ideal city-life: starting small</h3>
+          <img src="media/ecotown.jpg" style="width:70%; height:auto;" alt="SimCity background">
+          <p>Ökodorf Sieben Linden (Germany)</p>
+        </div>
+      </section>
+
+      <section>
+        <ul class="clean-list" style="font-size: 0.8em;">
+          <li class="fragment">But, i have my doubts</li>
+          <li class="fragment">Small communities risk becoming "cultish"</li>
+          <li class="fragment">Where do all the materials come from?</li>
+          <li class="fragment">Does this city standalone or act as a model for other cities? What if it is infiltrated by other communities? Who is accepted into it?</li>
+          <li class="fragment">this doesn't really count as a city, does it?</li>
+        </ul>
+      </section>
+
+      <section>
+        <h4>Perhaps, <i>the ideal city</i> are elements of cities we already have...</h4>
+        <!-- <p>as long as these cities can continue to survive in our environments</p> -->
+        
+        <div class="photo-collage">
+          <div class="collage-item col-span-2 row-span-2">
+            <img src="media/angkor_wat.png" alt="Angkor Wat" />
+            <span class="caption">Agro-Urbanism</span>
+          </div>
+          <div class="collage-item">
+            <img src="media/athens.png" alt="Athens" />
+            <span class="caption">Democracy</span>
+          </div>
+          <div class="collage-item">
+            <img src="media/netherlands.png" alt="netherlands" />
+            <span class="caption">Flood Control</span>
+          </div>
+          <div class="collage-item col-span-2">
+            <img src="media/forbiddencity.jpg" alt="Forbidden City" />
+            <span class="caption">Surveillance and Power</span>
+          </div>
+          <div class="collage-item">
+            <img src="media/jaipur.jpg" alt="Jaipur" />
+            <span class="caption">Planned City</span>
+          </div>
+          <div class="collage-item">
+            <img src="media/oldcairo.jpg" alt="Old Cairo" />
+            <span class="caption">Organic growth</span>
+          </div>
+          <div class="collage-item col-span-2">
+            <img src="media/kyoto.jpg" alt="Kyoto" />
+            <span class="caption">Human Scale Architecture</span>
+          </div>
+        </div>
+
+        <style>
+          
+        </style>
+      </section>
+      
+      <section>
+        <h4>Perhaps, <i>the ideal city</i> are elements of cities we already have...</h4>
+        <!-- <p>as long as these cities can continue to survive in our environments</p> -->
+        
+        <div class="photo-collage">
+          <div class="collage-item col-span-2 row-span-2">
+            <img src="media/angkor_wat.png" alt="Angkor Wat" />
+            <span class="caption">Angkor Wat</span>
+          </div>
+          <div class="collage-item">
+            <img src="media/athens.png" alt="Athens" />
+            <span class="caption">Athens</span>
+          </div>
+          <div class="collage-item">
+            <img src="media/netherlands.png" alt="netherlands" />
+            <span class="caption">Netherlands</span>
+          </div>
+          <div class="collage-item col-span-2">
+            <img src="media/forbiddencity.jpg" alt="Forbidden City" />
+            <span class="caption">Forbidden City</span>
+          </div>
+          <div class="collage-item">
+            <img src="media/jaipur.jpg" alt="Jaipur" />
+            <span class="caption">Jaipur</span>
+          </div>
+          <div class="collage-item">
+            <img src="media/oldcairo.jpg" alt="Old Cairo" />
+            <span class="caption">Old Cairo</span>
+          </div>
+          <div class="collage-item col-span-2">
+            <img src="media/kyoto.jpg" alt="Kyoto" />
+            <span class="caption">Kyoto</span>
+          </div>
+        </div>
+
+        <style>
+          
+        </style>
+      </section>
+
+      <section>
+        <div class="overlay">
+          <h2>perhaps the ideal city is a process</h2>
+          <p class="quote fragment">borrowing ideas from elsewhere and morphing to a different state</p>
+        </div>
+      </section>
+
+       <section>
+        <div class="overlay">
+          <h2>thank you :)</h2>
+        </div>
+      </section>
+
+    </div>
+  </div>
+
+  <!-- Reveal.js -->
+  <script src="reveal.js"></script>
+
+  <!-- <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.js"></script> -->
+
+  <script>
+    Reveal.initialize({
+      hash: true,
+      transition: "fade",
+      backgroundTransition: "fade",
+      controls: true,
+      progress: true,
+      center: true,
+      margin: 0.02
+    });
+    function updateGrowth() {
+      const slide = Reveal.getCurrentSlide();
+      const trigger = slide.querySelector('.trigger-grow');
+
+      const shouldGrow = trigger && trigger.classList.contains('visible');
+
+      // Grow selected elements
+      slide.querySelectorAll('.grow-after-all').forEach(el => {
+        el.classList.toggle('grow-now', shouldGrow);
+      });
+
+      // Shrink selected elements
+      slide.querySelectorAll('.shrink-after-all').forEach(el => {
+        el.classList.toggle('shrink-now', shouldGrow);
+      });
+    }
+
+    Reveal.on('fragmentshown', updateGrowth);
+    Reveal.on('fragmenthidden', updateGrowth);
+    Reveal.on('slidechanged', updateGrowth);
+    
+
+  </script>
+
+</body>
+
+</html>
